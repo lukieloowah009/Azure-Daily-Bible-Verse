@@ -43,7 +43,7 @@ def main(mytimer: func.TimerRequest) -> None:
     """.format(chapterVerse, content, URL)
 
     port = 465
-    password = 'Chebuthu0!'
+    password = '<currently removed for security purpose>'
     context = ssl.create_default_context()
 
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
