@@ -29,7 +29,8 @@ def main(mytimer: func.TimerRequest) -> None:
     receivers = [
         'lukieloowah009@gmail.com',
         'octoberkheeler@gmail.com',
-        'sawloowah@gmail.com'
+        'sawloowah@gmail.com',
+        'yadanarhinata.10@gmail.com'
     ]
 
     message = """From: Daily Bible Verse <bibleversedaily785@gmail.com>
@@ -43,7 +44,7 @@ def main(mytimer: func.TimerRequest) -> None:
     """.format(chapterVerse, content, URL)
 
     port = 465
-    password = '<currently removed for security purpose>'
+    password = '<removed for security purpose>'
     context = ssl.create_default_context()
 
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
